@@ -1,15 +1,21 @@
 <h3><em>Here are the prized members of Cat Fanciers&copy;...</em></h3>
+<h5><em>Click on any member to view more information.</em></h5>
 
-<div *ngFor="let member of members | async" class="panel panel-default">
-  <div class="panel-body">
-    <div (click)="goToDetailPage(member)">
-      <img src="{{member.picture}}">
-      <h4>~*|> <em> {{member.name}}</em></h4>
-    </div>
-    <div *ngIf="currentRoute === '/admin'">
-        located in: {{member.location}} & owns {{member.cats}} cats
-      <hr>
-      <app-edit-member [selectedMember]="member"></app-edit-member>
+<div class="flex-container">
+  <div *ngFor="let member of members | async">
+    <div class="flex-body">
+      <div class="well">
+        <div class="tiger"></div>
+        <div (click)="goToDetailPage(member)">
+          <img src="{{member.picture}}">
+          <h4><em>{{member.name}}</em></h4>
+        </div>
+        <div *ngIf="currentRoute === '/admin'">
+            located in: {{member.location}} & owns {{member.cats}} cats
+          <hr>
+          <app-edit-member [selectedMember]="member"></app-edit-member>
+        </div>
+      </div>
     </div>
   </div>
 </div>
