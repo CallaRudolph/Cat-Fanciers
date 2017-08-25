@@ -4,5 +4,10 @@
   <div (click)="goToDetailPage(member)" class="panel-body">
     <img src="{{member.picture}}">
     <h4>~*|> <em> {{member.name}}</em></h4>
+    <div *ngIf="currentRoute === '/admin'">
+        located in: {{member.location}} & owns {{member.cats}} cats
+      <hr>
+      <app-edit-member></app-edit-member>
+    </div>
   </div>
 </div>
