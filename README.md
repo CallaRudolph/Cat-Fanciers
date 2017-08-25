@@ -6,7 +6,12 @@ By _Calla Rudolph_ [(e-mail me here)](<mailto:callarudolph@gmail.com>)
 
 ## Description
 
-This Angular 2 app was created as a portal for members to belong to the Cat Fanciers group. The app keeps a directory of all members by utilizing Firebase. Members are stored with their name, bio, number of cats owned, a picture, and location. Each member's profile can be viewed through a dynamic route. The admin section allows for new members to be entered, and each member can be individually edited or deleted, with changes saved directly to Firebase and immediately viewable on the page.
+This Angular 2 app was created as a portal for members to belong to the Cat Fanciers group. The app keeps a directory of all members by utilizing Firebase.
+  * Members are stored with their name, bio, number of cats owned, a picture, and location.
+  * Each member's profile can be viewed through a dynamic route.
+  * The admin section allows for new members to be entered, and each member can be individually edited or deleted, with changes saved directly to Firebase and immediately viewable on the page.
+  * There is a Messages component for users to leave and delete messages.
+  * A counter on the navbar displays the total number of members, messages, and cats that the members own. 
 
 _***Take a look at planning.md to see the foundation for this app!***_
 
