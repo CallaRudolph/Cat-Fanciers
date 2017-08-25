@@ -5,6 +5,7 @@ import { AboutComponent } from './about/about.component';
 import { GroupComponent } from './group/group.component';
 import { AdminComponent } from './admin/admin.component';
 import { MemberDetailComponent } from './member-detail/member-detail.component';
+import { MessagesComponent } from './messages/messages.component';
 
 const appRoutes: Routes = [
   {
@@ -26,6 +27,10 @@ const appRoutes: Routes = [
   {
     path: 'members/:id',
     component: MemberDetailComponent
+  },
+  {
+    path: 'messages',
+    component: MessagesComponent
   }
 ];
 

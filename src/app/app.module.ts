@@ -14,6 +14,7 @@ import { AdminComponent } from './admin/admin.component';
 import { MemberDetailComponent } from './member-detail/member-detail.component';
 import { EditMemberComponent } from './edit-member/edit-member.component';
 import { CatsPipe } from './cats.pipe';
+import { MessagesComponent } from './messages/messages.component';
 
 export const firebaseConfig = {
   apiKey: masterFirebaseConfig.apiKey,
@@ -31,7 +32,8 @@ export const firebaseConfig = {
     AdminComponent,
     MemberDetailComponent,
     EditMemberComponent,
-    CatsPipe
+    CatsPipe,
+    MessagesComponent
   ],
   imports: [
     BrowserModule,
