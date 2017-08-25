@@ -1,0 +1,20 @@
+{
+  "name": "cat-fanciers",
+  "description": "A delightful gathering of fancy cat fanciers.",
+  "main": "",
+  "authors": [
+    "Calla Rudolph <callarudolph@gmail.com>"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.7"
+  }
+}
