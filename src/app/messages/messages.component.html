@@ -1,1 +1,27 @@
+<h3>Message Board</h3>
+<div *ngFor="let message of messages | async" class="panel panel-default">
+  <div class="panel-heading">
+    <h5>left by {{message.name}}</h5>
+  </div>
+  <div class="panel-body">
+    <h3><em>"{{message.body}}"</em></h3>
+    <hr>
+    <button (click)="beginDeletingMessage(message)">Delete message</button>
+    <br>
+  </div>
+</div>
 <h3>Leave a message for the group!</h3>
+<div>
+  <div>
+    <label>Message:</label>
+    <br>
+    <textarea #newBody></textarea>
+  </div>
+  <div>
+    <label>Your name:</label>
+    <br>
+    <input #newName>
+  </div>
+  <br>
+  <button (click)="submitForm(newName.value, newBody.value); newName.value=''; newBody.value='';">Add Message</button>
+</div>
