@@ -1,7 +1,8 @@
 <h3><em>Here are the prized members of Cat Fanciers&copy;...</em></h3>
 
 <div *ngFor="let member of members | async" class="panel panel-default">
-  <div class="panel-body">
-    <h4><em>{{member.name}}</em></h4>
+  <div (click)="goToDetailPage(member)" class="panel-body">
+    <img src="{{member.picture}}">
+    <h4>~*|> <em> {{member.name}}</em></h4>
   </div>
 </div>

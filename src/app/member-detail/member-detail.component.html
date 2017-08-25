@@ -1,0 +1,8 @@
+<div>
+  <h3>{{(memberToDisplay | async).name}}, located in {{(memberToDisplay | async).location}}</h3>
+  <img src="{{(memberToDisplay | async).picture}}">
+  <h4>Owns {{(memberToDisplay | async).cats}} precious cats</h4>
+  <h4>{{(memberToDisplay | async).bio}}</h4>
+</div>
+
+<a routerLink='/group'>Return to Member List</a>
