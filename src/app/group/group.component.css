@@ -35,7 +35,7 @@ h4:hover {
   border: 2px dashed;
   border-radius: 5px;
   position: absolute;
-  opacity: .80;
+  opacity: .76;
   z-index: -1;
   top: 0;
   bottom: 0;
@@ -51,4 +51,9 @@ img {
   max-width: 100px;
   float: left;
   padding-right: 10px;
+}
+
+#admin {
+  color: #f2bb05;
+  text-shadow: 1px 1px black;
 }
