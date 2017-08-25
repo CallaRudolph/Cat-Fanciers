@@ -13,6 +13,7 @@ import { AngularFireDatabaseModule } from 'angularfire2/database';
 import { AdminComponent } from './admin/admin.component';
 import { MemberDetailComponent } from './member-detail/member-detail.component';
 import { EditMemberComponent } from './edit-member/edit-member.component';
+import { CatsPipe } from './cats.pipe';
 
 export const firebaseConfig = {
   apiKey: masterFirebaseConfig.apiKey,
@@ -29,7 +30,8 @@ export const firebaseConfig = {
     GroupComponent,
     AdminComponent,
     MemberDetailComponent,
-    EditMemberComponent
+    EditMemberComponent,
+    CatsPipe
   ],
   imports: [
     BrowserModule,

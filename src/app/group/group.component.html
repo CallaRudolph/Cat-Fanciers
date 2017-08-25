@@ -1,8 +1,14 @@
 <h3><em>Here are the prized members of Cat Fanciers&copy;...</em></h3>
 <h5><em>Click on any member to view more information.</em></h5>
 
+<select (change)="onChange($event.target.value)">
+  <option value="allCats" selected="selected">All Members</option>
+  <option value="low">Members with few cats</option>
+  <option value="high">Members with many cats</option>
+</select>
+
 <div class="flex-container">
-  <div *ngFor="let member of members | async">
+  <div *ngFor="let member of members | async | cats:filterByCats">
     <div class="flex-body">
       <div class="well">
         <div class="tiger"></div>

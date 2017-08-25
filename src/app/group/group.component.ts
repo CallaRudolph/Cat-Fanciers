@@ -13,6 +13,7 @@ import { FirebaseListObservable } from 'angularfire2/database';
 export class GroupComponent implements OnInit {
   members: FirebaseListObservable<any[]>;
   currentRoute: string = this.router.url;
+  filterByCats: string = "allCats";
 
   constructor(private router: Router, private memberService: MemberService) { }
 
@@ -22,6 +23,10 @@ export class GroupComponent implements OnInit {
 
   goToDetailPage(clickedMember) {
     this.router.navigate(['members', clickedMember.$key]);
+  }
+
+  onChange(optionFromMenu) {
+    this.filterByCats = optionFromMenu;
   }
 
 }
