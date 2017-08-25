@@ -21,4 +21,10 @@ export class EditMemberComponent implements OnInit {
     this.memberService.updateMember(memberToUpdate);
     this.router.navigate(['group']);
   }
+
+  beginDeletingMember(memberToDelete){
+  if(confirm("Are you sure you want to remove this member from the group?")){
+    this.memberService.deleteMember(memberToDelete);
+  }
+}
 }

@@ -10,11 +10,15 @@
 
 <label>Adjust # of Cats Owned:</label>
 <input [(ngModel)]="selectedMember.cats">
+<br>
 
 <label>Did {{selectedMember.name}} relocate?</label>
 <input [(ngModel)]="selectedMember.location">
+<br>
 
 <label>Update picture:</label>
 <input [(ngModel)]="selectedMember.picture">
+<br>
 
-<button (click)="beginUpdatingMember(selectedMember)">Update Member</button>
+<button (click)="beginUpdatingMember(selectedMember)">Update {{selectedMember.name}}</button>
+<button (click)="beginDeletingMember(selectedMember)">Remove {{selectedMember.name}}</button>
