@@ -11,7 +11,7 @@ This Angular 2 app was created as a portal for members to belong to the Cat Fanc
   * Each member's profile can be viewed through a dynamic route.
   * The admin section allows for new members to be entered, and each member can be individually edited or deleted, with changes saved directly to Firebase and immediately viewable on the page.
   * There is a Messages component for users to leave and delete messages.
-  * A counter on the navbar displays the total number of members, messages, and cats that the members own. 
+  * A counter on the navbar displays the total number of members, messages, and cats that the members own. The footer displays the current day of the week.
 
 _***Take a look at planning.md to see the foundation for this app!***_
 
