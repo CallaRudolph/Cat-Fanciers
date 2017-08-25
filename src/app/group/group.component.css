@@ -6,9 +6,12 @@
 }
 
 h4 {
-  color: #fec601;
-  text-shadow: 1px 1px white;
+  color: black;
+  text-shadow: 2px 2px white;
   font-size: 35px;
+  /*background: inherit;
+  background-clip: text;
+  color: transparent;*/
 }
 
 h4:hover {
@@ -54,6 +57,6 @@ img {
 }
 
 #admin {
-  color: #f2bb05;
+  color: white;
   text-shadow: 1px 1px black;
 }

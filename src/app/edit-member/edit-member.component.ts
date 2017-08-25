@@ -32,4 +32,8 @@ export class EditMemberComponent implements OnInit {
   showEditForm() {
     this.edit = true;
   }
+
+  hideEditForm() {
+    this.edit = false;
+  }
 }

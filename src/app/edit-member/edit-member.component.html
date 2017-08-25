@@ -1,5 +1,7 @@
-<h4 (click)="showEditForm()">Click here to edit {{selectedMember.name}} </h4>
+<h4 (click)="showEditForm()">Click here to edit {{selectedMember.name}}</h4>
 <div *ngIf="edit===true">
+  <h5 (click)="hideEditForm()"><em>Click here to cancel edit of {{selectedMember.name}}</em></h5>
+
   <label>Change Name:</label>
   <input [(ngModel)]="selectedMember.name">
   <br>

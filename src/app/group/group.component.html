@@ -8,10 +8,9 @@
         <div class="tiger"></div>
         <div (click)="goToDetailPage(member)">
           <img src="{{member.picture}}">
-          <h4><em>{{member.name}}</em></h4>
+          <h4 contentEditable role='textbox' aria-multiline='true'><em>{{member.name}}</em></h4>
         </div>
         <div id="admin" *ngIf="currentRoute === '/admin'">
-            located in: {{member.location}} & owns {{member.cats}} cats
           <hr>
           <app-edit-member [selectedMember]="member"></app-edit-member>
         </div>
