@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Member } from '../member.model';
 
 @Component({
   selector: 'app-group',
@@ -6,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./group.component.css']
 })
 export class GroupComponent implements OnInit {
+  members: Member[]; 
 
   constructor() { }
 
