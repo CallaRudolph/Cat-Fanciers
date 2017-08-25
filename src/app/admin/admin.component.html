@@ -3,34 +3,38 @@
     <h3 class="panel-title">Add New Member to Cat Fanciers&copy;</h3>
   </div>
   <div class="panel-body">
-    <div>
-      <div>
-        <label>Member Name:</label>
+    <div class="row">
+      <div class="col-md-6">
+        <div>
+          <label>Member Name:</label>
+          <br>
+          <input #newName>
+        </div>
+        <div>
+          <label>Member bio:</label>
+          <br>
+          <textarea #newBio></textarea>
+        </div>
         <br>
-        <input #newName>
+        <button (click)="submitForm(newName.value, newBio.value, newCats.value, newPicture.value, newLocation.value); newName.value=''; newBio.value=''; newCats.value=''; newPicture.value=''; newLocation.value=''">Add Member</button>
       </div>
-      <div>
-        <label>Member bio:</label>
-        <br>
-        <textarea #newBio></textarea>
+      <div class="col-md-6">
+        <div>
+          <label>How many cats does the member own?</label>
+          <br>
+          <input typer="number" #newCats>
+        </div>
+        <div>
+          <label>Load in a picture .jpg</label>
+          <br>
+          <input #newPicture>
+        </div>
+        <div>
+          <label>Where does this member live?</label>
+          <br>
+          <input #newLocation>
+        </div>
       </div>
-      <div>
-        <label>How many cats does the member own?</label>
-        <br>
-        <input typer="number" #newCats>
-      </div>
-      <div>
-        <label>Load in a picture .jpg</label>
-        <br>
-        <input #newPicture>
-      </div>
-      <div>
-        <label>Where does this member live?</label>
-        <br>
-        <input #newLocation>
-      </div>
-      <br>
-      <button (click)="submitForm(newName.value, newBio.value, newCats.value, newPicture.value, newLocation.value); newName.value=''; newBio.value=''; newCats.value=''; newPicture.value=''; newLocation.value=''">Add Member</button>
     </div>
   </div>
 </div>
