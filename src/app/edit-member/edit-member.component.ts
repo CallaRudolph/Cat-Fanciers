@@ -11,6 +11,7 @@ import { Router } from '@angular/router';
 })
 export class EditMemberComponent implements OnInit {
   @Input() selectedMember;
+  edit = false;
 
   constructor(private router: Router, private memberService: MemberService) { }
 
@@ -23,8 +24,12 @@ export class EditMemberComponent implements OnInit {
   }
 
   beginDeletingMember(memberToDelete){
-  if(confirm("Are you sure you want to remove this member from the group?")){
-    this.memberService.deleteMember(memberToDelete);
+    if(confirm("Are you sure you want to remove this member from the group?")){
+      this.memberService.deleteMember(memberToDelete);
+    }
   }
-}
+
+  showEditForm() {
+    this.edit = true;
+  }
 }
