@@ -4,7 +4,7 @@ _Angular Extended JS Independent Project for Epicodus, 08.25.2017_
 
 By _Calla Rudolph_ [(e-mail me here)](<mailto:callarudolph@gmail.com>)
 
-This website has been deployed for easy viewing: https://cat-fanciers.firebaseapp.com/about
+This website has been deployed for easy viewing: https://cat-fanciers.firebaseapp.com
 
 ## Description
 
