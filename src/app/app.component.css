@@ -5,3 +5,7 @@ p {
 em {
   font-size: 13px;
 }
+
+.footer {
+  z-index: 2;
+}

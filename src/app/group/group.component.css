@@ -9,9 +9,6 @@ h4 {
   color: black;
   text-shadow: 2px 2px white;
   font-size: 35px;
-  /*background: inherit;
-  background-clip: text;
-  color: transparent;*/
 }
 
 h4:hover {

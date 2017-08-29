@@ -1,27 +1,29 @@
-<h4 (click)="showEditForm()">Click here to edit {{selectedMember.name}}</h4>
-<div *ngIf="edit===true">
-  <h5 (click)="hideEditForm()"><em>Click here to cancel edit of {{selectedMember.name}}</em></h5>
+<div class="editing">
+  <h4 (click)="showEditForm()">Click here to edit {{selectedMember.name}}</h4>
+  <div *ngIf="edit===true">
+    <h5 (click)="hideEditForm()"><em>Click here to cancel edit of {{selectedMember.name}}</em></h5>
 
-  <label>Change Name:</label>
-  <input [(ngModel)]="selectedMember.name">
-  <br>
+    <label>Change Name:</label>
+    <input [(ngModel)]="selectedMember.name">
+    <br>
 
-  <label>Update Bio:</label>
-  <textarea [(ngModel)]="selectedMember.bio"></textarea>
-  <br>
+    <label>Update Bio:</label>
+    <textarea [(ngModel)]="selectedMember.bio"></textarea>
+    <br>
 
-  <label>Adjust # of Cats Owned:</label>
-  <input type="number" [(ngModel)]="selectedMember.cats">
-  <br>
+    <label>Adjust # of Cats Owned:</label>
+    <input type="number" [(ngModel)]="selectedMember.cats">
+    <br>
 
-  <label>Did {{selectedMember.name}} relocate?</label>
-  <input [(ngModel)]="selectedMember.location">
-  <br>
+    <label>Did {{selectedMember.name}} relocate?</label>
+    <input [(ngModel)]="selectedMember.location">
+    <br>
 
-  <label>Update picture:</label>
-  <input [(ngModel)]="selectedMember.picture">
-  <br><br>
+    <label>Update picture:</label>
+    <input [(ngModel)]="selectedMember.picture">
+    <br><br>
 
-  <button (click)="beginUpdatingMember(selectedMember)">Update {{selectedMember.name}}</button>
-  <button (click)="beginDeletingMember(selectedMember)">Remove {{selectedMember.name}}</button>
+    <button (click)="beginUpdatingMember(selectedMember)">Update {{selectedMember.name}}</button>
+    <button (click)="beginDeletingMember(selectedMember)">Remove {{selectedMember.name}}</button>
+  </div>
 </div>
