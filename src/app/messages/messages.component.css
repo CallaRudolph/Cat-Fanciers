@@ -12,6 +12,14 @@
   float: right;
 }
 
+textarea {
+  color: black;
+}
+
+input {
+  color: black;
+}
+
 button {
   color: black;
 }
