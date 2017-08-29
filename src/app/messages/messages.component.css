@@ -5,3 +5,13 @@
 .panel-body {
   background-color: #f2e7c9;
 }
+
+#message {
+  color: white;
+  text-shadow: 1px 1px black;
+  float: right;
+}
+
+button {
+  color: black;
+}
